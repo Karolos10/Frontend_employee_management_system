@@ -5,6 +5,7 @@
       <th> First Name </th>
       <th> Last Name </th>
       <th> Email Id </th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -12,6 +13,10 @@
       <td> {{employe.firstName}} </td>
       <td> {{employe.lastName}} </td>
       <td> {{employe.emailId}} </td>
+      <td>
+        <button (click)="updateEmployee(employe.id)" class="btn btn-info">Update</button>
+        <!-- <button (click)="deleteEmployee(employe.id)" class="btn btn-danger">Delete</button>
+        <button (click)="viewEmployee(employe.id)" class="btn btn-info">View</button> -->
     </tr>
   </tbody>
 </table>
